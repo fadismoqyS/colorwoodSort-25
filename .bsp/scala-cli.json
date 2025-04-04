@@ -1,0 +1,20 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "/home/fadi/.local/share/coursier/bin/.scala-cli.aux",
+    "bsp",
+    "--json-options",
+    "/home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json",
+    "--json-launcher-options",
+    "/home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json",
+    "--envs-file",
+    "/home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json",
+    "/home/fadi/newlife2025/uni/colorwoodSort-SE"
+  ],
+  "version": "1.7.1",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
