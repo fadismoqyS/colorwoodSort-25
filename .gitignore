@@ -1,0 +1,31 @@
+# Scala
+*.class
+*.log
+*.ctxt
+.project
+.classpath
+.settings/
+bin/
+target/
+.scala_dependencies
+.worksheet
+
+# Metals
+.metals/
+.bloop/
+.scala-build/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# OS specific
+.DS_Store
+Thumbs.db 
