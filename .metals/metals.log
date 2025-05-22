@@ -10479,3 +10479,363 @@ java.util.concurrent.TimeoutException
 2025.05.20 17:03:51 INFO  Shutting down server
 2025.05.20 17:03:51 INFO  shutting down Metals
 2025.05.20 17:03:51 INFO  Exiting server
+2025.05.22 23:16:34 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\SE\colorwoodSort-SE\.metals\lsp.trace.json or C:\Users\rohef\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2025.05.22 23:16:47 INFO  logging to files D:\SE\colorwoodSort-SE\.metals\metals.log
+2025.05.22 23:16:47 INFO  Started: Metals version 1.5.2 in folders 'D:\SE\colorwoodSort-SE' for client Cursor 1.96.2.
+2025.05.22 23:16:49 INFO  no build target found for D:\SE\colorwoodSort-SE\src\src\main\scala\de\htwg\se\colorwoodSort\Main.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:16:50 INFO  no build target found for D:\SE\colorwoodSort-SE\src\src\main\scala\de\htwg\se\colorwoodSort\Main.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:16:51 INFO  Attempting to connect to the build server...
+2025.05.22 23:16:51 INFO  Running BSP server List(/home/fadi/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json, --json-launcher-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json, --envs-file, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json, /home/fadi/newlife2025/uni/colorwoodSort-SE)
+2025.05.22 23:16:51 ERROR Running process '/home/fadi/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json --json-launcher-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json --envs-file /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json /home/fadi/newlife2025/uni/colorwoodSort-SE' failed
+java.io.IOException: Cannot run program "/home/fadi/.local/share/coursier/bin/.scala-cli.aux" (in directory "D:\SE\colorwoodSort-SE"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:173)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:219)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$4(ConnectionProvider.scala:491)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$3(ConnectionProvider.scala:491)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:173)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:219)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$4(ConnectionProvider.scala:491)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$3(ConnectionProvider.scala:491)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:16:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SE\colorwoodSort-SE\.metals\bsp.trace.json or C:\Users\rohef\AppData\Local\scalameta\metals\cache\bsp.trace.json
+Mai 22, 2025 11:17:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
+2025.05.22 23:17:18 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:17:18 WARN  Could not find semantic tokens for: file:///D:/SE/colorwoodSort-SE/build.sbt
+2025.05.22 23:17:53 ERROR Timeout waiting for 'build/initialize' response
+2025.05.22 23:17:53 WARN  Retrying connection to the build server scala-cli
+2025.05.22 23:17:53 INFO  Running BSP server List(/home/fadi/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json, --json-launcher-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json, --envs-file, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json, /home/fadi/newlife2025/uni/colorwoodSort-SE)
+2025.05.22 23:17:53 ERROR Running process '/home/fadi/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json --json-launcher-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json --envs-file /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json /home/fadi/newlife2025/uni/colorwoodSort-SE' failed
+java.io.IOException: Cannot run program "/home/fadi/.local/share/coursier/bin/.scala-cli.aux" (in directory "D:\SE\colorwoodSort-SE"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:17:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SE\colorwoodSort-SE\.metals\bsp.trace.json or C:\Users\rohef\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.05.22 23:18:53 ERROR Timeout waiting for 'build/initialize' response
+2025.05.22 23:18:53 WARN  Retrying connection to the build server scala-cli
+2025.05.22 23:18:53 INFO  Running BSP server List(/home/fadi/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json, --json-launcher-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json, --envs-file, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json, /home/fadi/newlife2025/uni/colorwoodSort-SE)
+2025.05.22 23:18:53 ERROR Running process '/home/fadi/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json --json-launcher-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json --envs-file /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json /home/fadi/newlife2025/uni/colorwoodSort-SE' failed
+java.io.IOException: Cannot run program "/home/fadi/.local/share/coursier/bin/.scala-cli.aux" (in directory "D:\SE\colorwoodSort-SE"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:18:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SE\colorwoodSort-SE\.metals\bsp.trace.json or C:\Users\rohef\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.05.22 23:19:54 ERROR Timeout waiting for 'build/initialize' response
+2025.05.22 23:19:54 WARN  Retrying connection to the build server scala-cli
+2025.05.22 23:19:54 INFO  Running BSP server List(/home/fadi/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json, --json-launcher-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json, --envs-file, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json, /home/fadi/newlife2025/uni/colorwoodSort-SE)
+2025.05.22 23:19:54 ERROR Running process '/home/fadi/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json --json-launcher-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json --envs-file /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json /home/fadi/newlife2025/uni/colorwoodSort-SE' failed
+java.io.IOException: Cannot run program "/home/fadi/.local/share/coursier/bin/.scala-cli.aux" (in directory "D:\SE\colorwoodSort-SE"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:19:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SE\colorwoodSort-SE\.metals\bsp.trace.json or C:\Users\rohef\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.05.22 23:20:39 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:20:55 ERROR Timeout waiting for 'build/initialize' response
+2025.05.22 23:20:55 WARN  Retrying connection to the build server scala-cli
+2025.05.22 23:20:55 INFO  Running BSP server List(/home/fadi/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json, --json-launcher-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json, --envs-file, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json, /home/fadi/newlife2025/uni/colorwoodSort-SE)
+2025.05.22 23:20:55 ERROR Running process '/home/fadi/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json --json-launcher-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json --envs-file /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json /home/fadi/newlife2025/uni/colorwoodSort-SE' failed
+java.io.IOException: Cannot run program "/home/fadi/.local/share/coursier/bin/.scala-cli.aux" (in directory "D:\SE\colorwoodSort-SE"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:20:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SE\colorwoodSort-SE\.metals\bsp.trace.json or C:\Users\rohef\AppData\Local\scalameta\metals\cache\bsp.trace.json
+Mai 22, 2025 11:21:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNUNG: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/d%3A/SE/colorwoodSort-SE/build.sbt?%7B%22path%22%3A%22d%3A%5C%5CSE%5C%5CcolorwoodSort-SE%5C%5Cbuild.sbt%22%2C%22ref%22%3A%22~%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:213)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:130)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:190)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:777)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:774)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:775)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:21:55 ERROR Timeout waiting for 'build/initialize' response
+2025.05.22 23:21:55 WARN  Retrying connection to the build server scala-cli
+2025.05.22 23:21:55 INFO  Running BSP server List(/home/fadi/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json, --json-launcher-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json, --envs-file, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json, /home/fadi/newlife2025/uni/colorwoodSort-SE)
+2025.05.22 23:21:55 ERROR Running process '/home/fadi/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json --json-launcher-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json --envs-file /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json /home/fadi/newlife2025/uni/colorwoodSort-SE' failed
+java.io.IOException: Cannot run program "/home/fadi/.local/share/coursier/bin/.scala-cli.aux" (in directory "D:\SE\colorwoodSort-SE"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:21:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SE\colorwoodSort-SE\.metals\bsp.trace.json or C:\Users\rohef\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.05.22 23:22:10 WARN  no build target for: D:\SE\colorwoodSort-SE\build.sbt
+2025.05.22 23:22:10 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:22:10 WARN  Could not find semantic tokens for: file:///D:/SE/colorwoodSort-SE/build.sbt
+2025.05.22 23:22:56 ERROR Timeout waiting for 'build/initialize' response
+2025.05.22 23:22:56 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:2004)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2139)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:754)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:627)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:22:56 WARN  no build target for: D:\SE\colorwoodSort-SE\src\src\main\scala\de\htwg\se\colorwoodSort\Main.scala
+2025.05.22 23:22:56 WARN  no build target for: D:\SE\colorwoodSort-SE\build.sbt
+2025.05.22 23:22:56 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:22:56 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:22:56 INFO  no build target found for D:\SE\colorwoodSort-SE\src\src\main\scala\de\htwg\se\colorwoodSort\Main.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:22:57 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:22:57 WARN  Could not find semantic tokens for: file:///D:/SE/colorwoodSort-SE/build.sbt
+2025.05.22 23:22:57 INFO  time: code lens generation in 1.32s
+2025.05.22 23:27:22 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:27:24 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:27:28 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.5
+2025.05.22 23:37:44 INFO  Shutting down server
+2025.05.22 23:37:44 INFO  shutting down Metals
+2025.05.22 23:37:44 INFO  Exiting server
+2025.05.22 23:57:17 INFO  Started: Metals version 1.5.3 in folders 'D:\SE\colorwoodSort-SE' for client Visual Studio Code 1.100.2.
+2025.05.22 23:57:19 INFO  no build target found for D:\SE\colorwoodSort-SE\src\src\main\scala\de\htwg\se\colorwoodSort\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.05.22 23:57:20 INFO  Attempting to connect to the build server...
+2025.05.22 23:57:20 INFO  Running BSP server List(/home/fadi/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json, --json-launcher-options, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json, --envs-file, /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json, /home/fadi/newlife2025/uni/colorwoodSort-SE)
+2025.05.22 23:57:20 ERROR Running process '/home/fadi/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-options-v2.json --json-launcher-options /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-launcher-options.json --envs-file /home/fadi/newlife2025/uni/colorwoodSort-SE/.scala-build/ide-envs.json /home/fadi/newlife2025/uni/colorwoodSort-SE' failed
+java.io.IOException: Cannot run program "/home/fadi/.local/share/coursier/bin/.scala-cli.aux" (in directory "D:\SE\colorwoodSort-SE"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:602)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:671)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:174)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:220)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$4(ConnectionProvider.scala:568)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$3(ConnectionProvider.scala:568)
+	at scala.meta.internal.metals.Interruptable.$anonfun$flatMap$1(Interruptable.scala:33)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:602)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:671)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:174)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:220)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$4(ConnectionProvider.scala:568)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$3(ConnectionProvider.scala:568)
+	at scala.meta.internal.metals.Interruptable.$anonfun$flatMap$1(Interruptable.scala:33)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1575)
+
+2025.05.22 23:57:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\SE\colorwoodSort-SE\.metals\bsp.trace.json or C:\Users\rohef\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.05.22 23:57:56 WARN  no build target for: D:\SE\colorwoodSort-SE\build.sbt
+2025.05.22 23:57:56 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.05.22 23:57:56 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.05.22 23:57:56 INFO  no build target found for D:\SE\colorwoodSort-SE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.05.22 23:57:56 WARN  Could not find semantic tokens for: file:///D:/SE/colorwoodSort-SE/build.sbt
+2025.05.22 23:58:16 INFO  Shutting down server
+2025.05.22 23:58:16 INFO  shutting down Metals
+2025.05.22 23:58:16 INFO  Exiting server
