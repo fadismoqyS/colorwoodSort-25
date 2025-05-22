@@ -2,24 +2,27 @@ package de.htwg.se.colorwoodSort.controller
 
 import scala.io.StdIn.readLine
 import de.htwg.se.colorwoodSort.model.GameState
-import de.htwg.se.colorwoodSort.view.GameView
+import de.htwg.se.colorwoodSort.util.Subject
+//import de.htwg.se.colorwoodSort.view.GameView
 
-class GameController(private val gameState: GameState, private val view: GameView) {
+class GameController(private val gameState: GameState) extends Subject {
+  private var lastMoveValid: Boolean = true
+  private var lastMoveSuccessful: Boolean = false
+  private var lastInputValid: Boolean = true
+  private var lastNumberValid: Boolean = true
+
   def start(): Unit = {
-    view.displayWelcome()
+    notifyObservers()
     gameLoop()
   }
 
   private def gameLoop(): Unit = {
     var running = true
     while (running) {
-      view.displayGameState(gameState)
-      
       if (gameState.isSolved) {
-        view.displayVictory()
+        notifyObservers()
         running = false
       } else {
-        view.displayMovePrompt()
         val input = readLine()
         
         if (input.toLowerCase == "q") {
@@ -32,21 +35,31 @@ class GameController(private val gameState: GameState, private val view: GameVie
   }
 
   private def processMove(input: String): Unit = {
-    val parts = input.trim.split("\\s+")  // Split on any whitespace
+    val parts = input.trim.split("\\s+")
     if (parts.length == 2) {
       try {
         val from = parts(0).toInt
         val to = parts(1).toInt
-        if (gameState.move(from, to)) {
-          view.displaySuccessfulMove()
-        } else {
-          view.displayInvalidMove()
-        }
+        lastMoveValid = true
+        lastMoveSuccessful = gameState.move(from, to)
+        lastInputValid = true
+        lastNumberValid = true
       } catch {
-        case _: NumberFormatException => view.displayInvalidNumber()
+        case _: NumberFormatException => 
+          lastMoveValid = false
+          lastNumberValid = false
       }
     } else {
-      view.displayInvalidInput()
+      lastMoveValid = false
+      lastInputValid = false
     }
+    notifyObservers()
   }
+
+  def getGameState: GameState = gameState
+  def isLastMoveValid: Boolean = lastMoveValid
+  def isLastMoveSuccessful: Boolean = lastMoveSuccessful
+  def isLastInputValid: Boolean = lastInputValid
+  def isLastNumberValid: Boolean = lastNumberValid
+  def isGameSolved: Boolean = gameState.isSolved
 } 

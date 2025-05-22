@@ -2,7 +2,6 @@ package de.htwg.se.colorwoodSort
 
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
-import de.htwg.se.colorwoodSort.model.{ColorBlock, Tube, GameState}
 
 class MainTest extends AnyWordSpec with Matchers {
   "The Main object" should {

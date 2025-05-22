@@ -1,7 +1,7 @@
 package de.htwg.se.colorwoodSort
 
 import de.htwg.se.colorwoodSort.model.{Tube, ColorBlock, GameState}
-import de.htwg.se.colorwoodSort.view.TUI
+import de.htwg.se.colorwoodSort.AView.TUI
 
 object Main extends App {
   // Erstelle ein initiales Spiel mit 4 Tubes (3 mit Blöcken, 1 leer)

@@ -21,9 +21,6 @@ class GameState(val tubes: Vector[Tube]) {
     // Get the color of the top block in source tube
     val sourceColor = source.topColor.getOrElse(return false)
 
-    // Check if target tube has a different color at the top
-    if (target.topColor.exists(_ != sourceColor)) return false
-
     // Determine how many contiguous blocks of the same color to move
     val contiguous = source.getBlocks.takeWhile(_.color == sourceColor)
     val freeSpace = target.capacity - target.getBlocks.size
