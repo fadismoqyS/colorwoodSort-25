@@ -2,6 +2,7 @@ package de.htwg.se.colorwoodSort
 
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
+import de.htwg.se.colorwoodSort.model.{Tube, ColorBlock}
 
 class TubeTest extends AnyWordSpec with Matchers {
   "A Tube" should {

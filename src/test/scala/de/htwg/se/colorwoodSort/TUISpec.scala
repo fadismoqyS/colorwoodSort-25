@@ -4,6 +4,8 @@ import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
+import de.htwg.se.colorwoodSort.model.{Tube, ColorBlock, GameState}
+import de.htwg.se.colorwoodSort.AView.TUI
 
 class TUITest extends AnyWordSpec with Matchers {
   "The TUI" should {

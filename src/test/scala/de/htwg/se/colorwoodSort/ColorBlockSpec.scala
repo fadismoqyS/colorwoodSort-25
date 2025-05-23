@@ -2,6 +2,7 @@ package de.htwg.se.colorwoodSort
 
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
+import de.htwg.se.colorwoodSort.model.ColorBlock
 
 class ColorBlockTest extends AnyWordSpec with Matchers {
   "A ColorBlock" should {
