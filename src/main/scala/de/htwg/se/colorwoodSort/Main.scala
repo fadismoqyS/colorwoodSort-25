@@ -8,7 +8,7 @@ object Main extends App {
   val tube1 = new Tube(3)
   val tube2 = new Tube(3)
   val tube3 = new Tube(3)
-  val tube4 = new Tube(3)  // Leere Tube zum Verschieben
+  val tube4 = new Tube(3)  // .Leere Tube zum Verschieben
   
   // Fülle die Tubes mit einigen Blöcken
   val red = ColorBlock("Red")
