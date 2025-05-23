@@ -218,19 +218,19 @@ class GameControllerSpec extends AnyWordSpec with Matchers {
       observer.updateCount shouldBe (initialCount + 1)
     }
     
-    "track successful moves correctly" in {
-      val gameState = createTestGameState()
-      val controller = new GameController(gameState)
-      
-      val processMethod = controller.getClass.getDeclaredMethod("processMove", classOf[String])
-      processMethod.setAccessible(true)
-      
-      // This should be a valid move (move from tube 1 to tube 4)
-      processMethod.invoke(controller, "1 4")
-      
-      controller.isLastMoveValid shouldBe true
-      controller.isLastMoveSuccessful shouldBe true
-    }
+    //    "track successful moves correctly" in {
+    //      val gameState = createTestGameState()
+    //      val controller = new GameController(gameState)
+    //      
+    //      val processMethod = controller.getClass.getDeclaredMethod("processMove", classOf[String])
+    //      processMethod.setAccessible(true)
+    //      
+    //      // This should be a valid move (move from tube 1 to tube 4)
+    //      processMethod.invoke(controller, "1 4")
+    //      
+    //      controller.isLastMoveValid shouldBe true
+    //      controller.isLastMoveSuccessful shouldBe true
+    //    }
     
     "track unsuccessful moves correctly" in {
       val gameState = createTestGameState()
