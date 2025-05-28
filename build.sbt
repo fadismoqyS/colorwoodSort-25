@@ -1,4 +1,4 @@
-val scala3Version = "3.3.1"
+val scala3Version = "3.5.1"
 
 lazy val root = project
   .in(file("."))
@@ -10,10 +10,5 @@ lazy val root = project
       "org.scalactic" %% "scalactic" % "3.2.14",
       "org.scalatest" %% "scalatest" % "3.2.14" % Test
     ),
-    testFrameworks += new TestFramework("org.scalatest.tools.Framework"),
-    coverageEnabled := true,
-    coverageFailOnMinimum := false,
-    coverageHighlighting := true,
-    coverageMinimumStmtTotal := 60,
-    coverageMinimumBranchTotal := 60
+    
   )
