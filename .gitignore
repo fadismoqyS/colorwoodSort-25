@@ -9,11 +9,29 @@ bin/
 target/
 .scala_dependencies
 .worksheet
+*.tasty
+
+# SBT
+.sbt
+project/project/
+project/target/
+project/.sbtserver
+.sbtserver/
+.sbtopts
+.sbt-1.0/
 
 # Metals
 .metals/
 .bloop/
 .scala-build/
+metals.sbt
+.ammonite/
+
+# Build tools
+.mill-version
+mill-out/
+.gradle/
+build/
 
 # VS Code
 .vscode/
@@ -26,6 +44,42 @@ target/
 *.ipr
 out/
 
+# Eclipse
+.project
+.classpath
+.cache
+.settings/
+.metadata
+
+# Ensime
+.ensime
+.ensime_cache/
+
+# Node.js (for Scala.js projects)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+.nyc_output/
+scoverage-data/
+scoverage-report/
+
 # OS specific
 .DS_Store
-Thumbs.db 
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache-main
+.cache-tests
+
+# Log files
+*.log
+logs/ 
