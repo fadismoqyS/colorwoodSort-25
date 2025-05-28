@@ -1,12 +1,14 @@
-name := "ColorwoodSort"
-version := "1.0"
-scalaVersion := "3.6.4"
+val scala3Version = "3.5.1"
 
-// Source-Verzeichnis anpassen
-Compile / scalaSource := baseDirectory.value / "src" / "src" / "main" / "scala"
-Test / scalaSource := baseDirectory.value / "src" / "src" / "test" / "scala"
-
-libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.10"
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % "test"
-
-Compile / mainClass := Some("de.htwg.se.colorwoodSort.Main")
+lazy val root = project
+  .in(file("."))
+  .settings(
+    name := "cpolordemo",
+    version := "0.1.0-SNAPSHOT",
+    scalaVersion := scala3Version,
+    libraryDependencies ++= Seq(
+      "org.scalactic" %% "scalactic" % "3.2.14",
+      "org.scalatest" %% "scalatest" % "3.2.14" % Test
+    ),
+    
+  )
